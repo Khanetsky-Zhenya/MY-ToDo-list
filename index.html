@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="index.js" defer type='module'></script>
+    <title>TodoApp</title>
+</head>
+<body>
+    <header class="d-flex flex-d flex-column align-items-center">
+        <h1 class="mt-5 mb-5 d-flex justify-content-center">Todo list</h1>
+        <div class="btn-group mb-5" style="width: 400px;" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-success">Add new</button>
+            <button type="button" class="btn btn-warning">Delete last</button>
+            <button type="button" class="btn btn-danger">Delete all</button>    
+        </div>
+
+    </header>
+    <main>
+        <ul class="list-group d-flex align-items-center">
+            
+        </ul>
+    </main>
+    <div class="modal" tabindex="1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add new ToDo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">ToDo title</label>
+                      <input type="text" class="form-control form-title">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">ToDo description</label>
+                      <textarea class="form-control form-description" row="3"></textarea>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
